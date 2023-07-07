@@ -1,0 +1,127 @@
+@charset "UTF-8";
+
+:root {
+    --cor0: whitesmoke;
+    --cor1: #C651CD;
+    --cor2: #8739F9;
+    --cor3: #7E4482;
+    --cor4: #363636;
+    --cor5: #242424;
+    --cor6: #1b1b1b;
+    --cor7: #100f10;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: var(--cor4);
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: var(--cor6);
+    padding: 10px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-bottom: 2px solid black;
+}
+
+h1 {
+    color: var(--cor0);
+    font-family: 'Permanent Marker', cursive, Arial, Helvetica, sans-serif;
+    text-shadow: 5px 5px 2px rgba(0, 0, 0, 0.322);
+}
+
+nav {
+    text-align: right;
+}
+
+.nav-topico {
+    display: inline-flex;
+    align-items: center;
+    text-decoration: none;
+    color: var(--cor0);
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 200;
+    margin-right: 32px;
+}
+
+.nav-topico:hover {
+    text-decoration: underline;
+    color: var(--cor1);
+}
+
+.nav-topico::before {
+    content: "";
+    background-color: var(--cor1);
+    width: 10px;
+    height: 10px;
+    margin-right: 10px;
+    border-radius: 50%;
+}
+
+#nav-button {
+    display: inline-block;
+    background-image: linear-gradient(to bottom, var(--cor1), var(--cor3));
+    height: 60px;
+    padding-right: 10px;
+    line-height: 60px;
+    border-radius: 20px;
+    box-shadow: 8px 8px 2px rgba(0, 0, 0, 0.493);
+    transition: tranform 0.3s linear;
+}
+
+#nav-button:hover {
+    text-decoration: none;
+    color: var(--cor7);
+    transform: scale(1.08);
+}
+
+#Sobre {
+    width: 800px;
+    background-color: var(--cor6);
+    margin: auto;
+    border-radius: 20px;
+}
+
+#Sobre h2 {
+    color: var(--cor2);
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 10px;
+    text-align: center;
+}
+
+#Sobre p {
+    color: var(--cor2);
+    font-family: Arial, Helvetica, sans-serif;
+    text-indent: 30px;
+    padding: 10px;
+}
+
+#Skills {
+    width: 800px;
+    background-color: var(--cor6);
+    margin: auto;
+    border-radius: 20px;
+}
+
+#Projetos {
+    width: 800px;
+    background-color: var(--cor6);
+    margin: auto;
+    border-radius: 20px;
+}
+
+#Contatos {
+    background-color: var(--cor7);
+}
