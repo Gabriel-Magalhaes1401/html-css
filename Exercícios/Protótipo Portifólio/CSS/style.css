@@ -2,7 +2,7 @@
 
 :root {
     --cor0: whitesmoke;
-    --cor1: #C651CD;
+    --cor1: #65AFFF;
     --cor2: #8739F9;
     --cor3: #7E4482;
     --cor4: #363636;
@@ -20,21 +20,20 @@ html {
     scroll-behavior: smooth;
 }
 
-header {
+.header {
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
     background-color: var(--cor6);
     padding: 10px;
-    border-bottom-left-radius: 20px;
-    border-bottom-right-radius: 20px;
     border-bottom: 2px solid black;
 }
 
 .logo {
-    color: var(--cor0);
+    color: var(--cor1);
     font-family: 'Permanent Marker', cursive, Arial, Helvetica, sans-serif;
     text-shadow: 5px 5px 2px rgba(0, 0, 0, 0.322);
+    margin-left: 32px;
 }
 
 nav {
@@ -66,14 +65,40 @@ nav {
     border-radius: 50%;
 }
 
-#Sobre {
+.banner {
+    background-image: url("../Imagens/Banner1076x603.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    height: 600px;
+    border-bottom: 10px solid #000;
+}
+
+.banner .wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 630px;
+}
+
+.banner .div-button {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+    margin-left: 150px;
+    width: 300px;
+}
+
+.box {
     display: inline-block;
+    margin-top: 100px;
+    margin-left: 30px;
     background-color: var(--cor6);
     border-radius: 20px;
     padding: 20px;
+    box-shadow: 5px 5px 4px #000;
+    width: 500px;
 }
 
-#Sobre h1 {
+.title {
     color: var(--cor1);
     font-family: Arial, Helvetica, sans-serif;
     font-size: 40px;
@@ -82,16 +107,10 @@ nav {
     margin-bottom: 15px;
 }
 
-#Sobre h2 {
+.subtitle {
     color: var(--cor2);
     font-family: Arial, Helvetica, sans-serif;
     font-size: 32px;
     text-align: center;
     margin-bottom: 15px;
-}
-
-#Sobre p {
-    color: var(--cor2);
-    font-family: Arial, Helvetica, sans-serif;
-    text-indent: 30px;
 }
